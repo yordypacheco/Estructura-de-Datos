@@ -1,17 +1,26 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 double notas[] = new double[10];
 
-for (int i=0; i < notas.length; i++{
+for (int i=0; i < notas.length; i++){
 
             System.out.println("ingrese la nota  numero " + i);
             notas[i]= sc.nextDouble();
         }
+System.out.println("el promedio de las notas es: " + promedio(notas));
+    }
+    public double promedio(double []notas){
+        double suma =0;
 
+        for (int i=0; i< notas.length;i++){
+            suma +=notas[i];
 
-        System.out.println("Hello PETRO!");
+        }
+        return  suma/notas.length;
 
     }
 }
