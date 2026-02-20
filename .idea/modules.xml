@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Estructura-de-Datos.iml" filepath="$PROJECT_DIR$/.idea/Estructura-de-Datos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sistema Academico-Arrays/Sistema Academico-Arrays.iml" filepath="$PROJECT_DIR$/Sistema Academico-Arrays/Sistema Academico-Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistema-de-monitoreo/sistema-de-monitoreo.iml" filepath="$PROJECT_DIR$/sistema-de-monitoreo/sistema-de-monitoreo.iml" />
     </modules>
   </component>
 </project>
