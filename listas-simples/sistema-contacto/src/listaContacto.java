@@ -56,7 +56,8 @@ public  boolean eliminar(String nombre){
 public  void listar(){
         nodo actual=cabeza;
         while (actual !=null){
-            actual.setSiguiente(actual.getSiguiente());
+            System.out.println(actual.getDato());
+            actual= actual.getSiguiente();
         }
 }
 
