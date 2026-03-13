@@ -34,4 +34,12 @@ public class Jugador {
     }
 
 
+    @Override
+    public String toString() {
+        return "Jugador{" +
+                "nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", ranking=" + ranking +
+                '}';
+    }
 }
