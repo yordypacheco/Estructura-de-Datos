@@ -32,55 +32,72 @@ public class ListaRanking {
     }
 
 
-
-    public  void listar(){
-        Nodo actual=cabeza;
-        while (actual !=null){
-            System.out.println(actual.getDato());
-            actual= actual.getSiguiente();
-
-        }
-    }
-
-    public Jugador  lobby (){
-if (cabeza == null){
-    return null;
-}
-Nodo actual = cabeza;
-Jugador mayor = cabeza.getDato();
-while ( actual != null){
-    if (actual.getDato().getRanking()> mayor.getRanking()){
-        mayor = actual.getDato();
-    }
-    actual = actual.getSiguiente();
-}
-
-
-
-return mayor;
-    }
-public int contar(){
-
-        int contador =0;
+    public void listar() {
         Nodo actual = cabeza;
-        while(actual !=null ){
-contador++;
-            actual= actual.getSiguiente();
+        while (actual != null) {
+            System.out.println(actual.getDato());
+            actual = actual.getSiguiente();
+
+        }
+    }
+
+    public Jugador lobby() {
+        if (cabeza == null) {
+            return null;
+        }
+        Nodo actual = cabeza;
+        Jugador mayor = cabeza.getDato();
+        while (actual != null) {
+            if (actual.getDato().getRanking() > mayor.getRanking()) {
+                mayor = actual.getDato();
+            }
+            actual = actual.getSiguiente();
         }
 
-    return contador;
-}
 
-public  int top(){
-    int aleatorio = (int)(Math.random() * 100) + 1;
+        return mayor;
+    }
 
-    return aleatorio;
-}
+    public Jugador victoriaMagistral() {
+        if (cabeza == null) {
+            return null;
+        }
+        Nodo actual = cabeza;
+        Jugador menor = cabeza.getDato();
+        while (actual != null) {
+            if (actual.getDato().getRanking() < menor.getRanking()) {
+                menor = actual.getDato();
+            }
+            actual = actual.getSiguiente();
+        }
+
+
+        return menor;
+    }
+
+    public int contar() {
+
+        int contador = 0;
+        Nodo actual = cabeza;
+        while (actual != null) {
+            contador++;
+            actual = actual.getSiguiente();
+        }
+
+        return contador;
+    }
+
+    public int top() {
+        int aleatorio = (int) (Math.random() * 100) + 1;
+
+        return aleatorio;
+    }
+
+
+    public void ordenarNodos() {
 
 
 
-
- public void ordenarNodos (){
 
     }
 
