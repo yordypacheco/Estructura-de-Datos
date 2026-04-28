@@ -32,20 +32,69 @@ public class ListaRanking {
     }
 
 
-
-    public  void listar(){
-        Nodo actual=cabeza;
-        while (actual !=null){
+    public void listar() {
+        Nodo actual = cabeza;
+        while (actual != null) {
             System.out.println(actual.getDato());
-            actual= actual.getSiguiente();
+            actual = actual.getSiguiente();
 
         }
     }
 
     public ListaRanking  lobby (){
+int  max = 100;
 
-   return null;
+
+
+
+
+
+
+
+
+
+       /* Nodo actual = cabeza;
+        int max = actual.getDato().getRanking();
+
+        while ( actual !=null){
+
+            if ( actual.getDato().getRanking()<max){
+max=actual.getDato().getRanking();
+
+
+            }
+actual= actual.getSiguiente();
+
+        }
+
+*/
+return null;
     }
 
+    public int contar() {
+
+        int contador = 0;
+        Nodo actual = cabeza;
+        while (actual != null) {
+            contador++;
+            actual = actual.getSiguiente();
+        }
+
+        return contador;
+    }
+
+    public int top() {
+        int aleatorio = (int) (Math.random() * 100) + 1;
+
+        return aleatorio;
+    }
+
+
+    public void ordenarNodos() {
+
+
+
+
+    }
 
 }
