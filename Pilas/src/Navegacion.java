@@ -5,14 +5,14 @@ public class Navegacion {
         alto = null;
     }
 
-    // PUSH → agregar página
+
     public void push(String dato) {
         Nodo nuevo = new Nodo(dato);
         nuevo.siguiente = alto;
         alto = nuevo;
     }
 
-    // POP → ir atrás
+
     public void pop() {
         if (alto == null) {
             System.out.println("No hay páginas");
@@ -21,7 +21,7 @@ public class Navegacion {
         }
     }
 
-    // PEEK → ver página actual
+
     public void peek() {
         if (alto == null) {
             System.out.println("No hay páginas abiertas");
@@ -30,7 +30,7 @@ public class Navegacion {
         }
     }
 
-    // Ver historial
+
     public void mostrar() {
         Nodo actual = alto;
         while (actual != null) {
