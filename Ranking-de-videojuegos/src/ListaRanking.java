@@ -43,33 +43,8 @@ public class ListaRanking {
     }
 
     public ListaRanking  lobby (){
-int  max = 100;
 
-
-
-
-
-
-
-
-
-
-       /* Nodo actual = cabeza;
-        int max = actual.getDato().getRanking();
-
-        while ( actual !=null){
-
-            if ( actual.getDato().getRanking()<max){
-max=actual.getDato().getRanking();
-
-
-            }
-actual= actual.getSiguiente();
-
-        }
-
-*/
-return null;
+   return null;
     }
 
 
